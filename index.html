@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Dat Hoang</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Dat Hoang</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#activities" onclick="toggleMenu()">Activities</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/avatar_round.png" alt="Dat Hoang profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dat Hoang</h1>
+        <p class="section__text__p2">Research and Development Specialist</p>
+        <!-- <div class="section__text__p3">
+            <p>
+                I have good knowledge and experience in developing production firmware for devices using ESP32, NRF52, STM32,... and I am also capable of developing android and desktop applications.
+            </p>
+        </div> -->
+        <div class="btn-container">
+          <!-- <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_Hoàng Thành Đạt_Embedded Developer_English.pdf')"
+          >
+            Download CV
+          </button> -->
+          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> -->
+          <div id="socials-container">
+            <a href="https://github.com/cshoangdat?fbclid=IwZXh0bgNhZW0CMTAAAR2iCswcjQw4YyXho8zi12Vx-5qH8KGZ6SRNVZWJT7bqvn15Rvv4z615Sls_aem_AY0a6hgAXvn2yaH0GnwdUWJhsCG-MkjaDjN2hX0tF4T6g3ad9g4Jrw4vXd-fztZuHYWBa_GGRDbU0WDKqGjflhQM"><i class="social-icon fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dathoang88/"><i class="social-icon fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/dathoang240722"><i class="social-icon fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/dat_hoang88?fbclid=IwZXh0bgNhZW0CMTAAAR2464NlwX_q3XpRhvAYb9HSichtsiNHLLrpocFLSRHHvw76d9Xu3zBiMvY_aem_AY3MGIYAOb6S6Kq5Ak-TGW43TsvWtNYO4wrAVyol1uafwdzCt-AQzeikfUG5LGp-uZ8zz6Yudpz-gy9JWK9R-Cg1"><i class="social-icon fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@dev.vivu?fbclid=IwZXh0bgNhZW0CMTAAAR15zO4Ez4pQA7S_e7w3daIoAIQwChCOY7R7wiwGlUPY_--68kFuayAud90_aem_AY1ycwNTjerCRs2zUdGaYFxNPpVePh6jJOXdn-TxlYo8EMj3UxxBGYW2QfRRLZ3iM1D1wyL60Vf5efk4JIzPvPFY"><i class="social-icon fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="about-icon fas fa-briefcase"></i>
+              <h3>VNNEXT Academy</h3>
+              <p>06/2022 - 03/2024 <br />STEM Teacher</p>
+            </div>
+            <div class="details-container">
+              <i class="about-icon fas fa-briefcase"></i>
+              <h3>TMA Solutions</h3>
+              <p>05/2023 - 08/2023 <br />Embedded Developer</p>
+            </div>
+            <div class="details-container">
+              <i class="about-icon fas fa-briefcase"></i>
+              <h3>Vingroup</h3>
+              <p>10/2023 - present <br />RnD Specialist</p>
+            </div>
+            <!-- <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div> -->
+          </div>
+          <div class="text-container">
+            <p>
+              My name is Dat Hoang. I graduated with a degree in Computer Engineering from Ho Chi Minh University of Technology and Education (HCMUTE) with a GPA of 8.43/10 (3.34/4) after 3.5 years. With nearly 2 years of experience as a STEM teacher, I have led students to achieve 2 second prizes at the city level, 1 second prize at the international level, 1 third prize, and several encouraging prizes in robot assembly and programming competitions. As an Embedded Developer and RnD Specialist, I have programmed firmware for many devices such as Ambi devices, HMI Delta, security keys, and also designed cross-platform software applications for Windows, macOS, and Android.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#experience"><i class="about-icon arrow fas fa-angle-double-down"></i></a>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Research and Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="experience-icon fas fa-check-circle"></i>
+                <div>
+                  <p>Strong in C/C++, python programming for Embedded Software Development</p>
+                </div>
+              </article>
+              <article>
+                <i class="experience-icon fas fa-check-circle"></i>
+                <div>
+                  <p>Knowledge with Java, Flutter for building mobile app and desktop app</p>
+                </div>
+              </article>
+              <article>
+                <i class="experience-icon fas fa-check-circle"></i>
+                <div>
+                  <p>Experience with microcontroller: ESP32, STM32, NRF52840, 8051</p>
+                </div>
+              </article>
+              <article>
+                <i class="experience-icon fas fa-check-circle"></i>
+                <div>
+                  <p>Experience with communication protocols: SPI, I2C, RMT, UART, Modbus RTU</p>
+                </div>
+              </article>
+              <article>
+                <i class="experience-icon fas fa-check-circle"></i>
+                <div>
+                  <p>Experience with connectivity: WIFI, BLE, GSM/GPRS, RF, LoraWan, NFC</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Research and Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="experience-icon fas fa-check-circle"></i>
+                <div>
+                  <p>Knowledge with IoT data protocol: MQTT, HTTP/HTTPS, web socket</p>
+                </div>
+              </article>
+              <article>
+                <i class="experience-icon fas fa-check-circle"></i>
+                <div>
+                  <p>Good knowledge and hands-on experience in RTOS</p>
+                </div>
+              </article>
+              <article>
+                <i class="experience-icon fas fa-check-circle"></i>
+                <div>
+                  <p>Knowledge of various types of memory: EEPROM, RAM and flash</p>
+                </div>
+              </article>
+              <article>
+                <i class="experience-icon fas fa-check-circle"></i>
+                <div>
+                  <p>Knowledge with cloud services: AWS, Firebase</p>
+                </div>
+            </article>
+            <article>
+              <i class="experience-icon fas fa-check-circle"></i>
+              <div>
+                <p>Design PCB layout with Easy EDA</p>
+              </div>
+          </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#projects"><i class="about-icon arrow fas fa-angle-double-down"></i></a>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="experience-article-container">
+              <img
+                src="./assets/hmi-delta.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">HMI Delta Control Panel</h3>
+          </div>
+          <div class="details-container color-container">
+            <div class="experience-article-container">
+              <img
+                src="./assets/ambi.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Ambi Climate</h3>
+          </div>
+          <div class="details-container color-container">
+            <div class="experience-article-container">
+              <img
+                src="./assets/vincss-key.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Security Key</h3>
+          </div>
+        </div>
+      </div>
+      <a href="#activities"><i class="about-icon arrow fas fa-angle-double-down"></i></a>
+    </section>
+    <section id="activities">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Activities</h1>
+      <!-- <div class="experience-details-container"> -->
+        <!-- <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="experience-article-container">
+              <img
+                src="./assets/organize.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="experience-article-container">
+              <img
+                src="./assets/iac.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="experience-article-container">
+              <img
+                src="./assets/award_2.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="experience-article-container">
+              <img
+                src="./assets/award_1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class = slider>
+        <div class = slider-list>
+          <div class = slider-item>
+            <!-- <div class = activities-content>
+              <h2>
+                Mentor for the 2023 National Robot Assembly and Programming Competition
+              </h2>
+              <h4>
+                With an environmental theme, this is a national science research competition for students with over 100 participating teams. As a mentor for the competing teams, I helped two teams win a second prize and a consolation prize.
+              </h4>
+            </div> -->
+              <img
+                src="./assets/award_2.jpg"
+                alt="Mentor for the 2023 National Robot Assembly and Programming Competition"
+                class="activities-img"
+              />            
+          </div>
+          <div class = slider-item>
+            <!-- <div class = activities-content> -->
+              <!-- <h2>
+                hihi
+              </h2>
+              <h4>
+                With an environmental theme, this is a national science research competition for students with over 100 participating teams. As a mentor for the competing teams, I helped two teams win a second prize and a consolation prize.
+              </h4> -->
+            <!-- </div> -->
+              <img
+                src="./assets/iac.jpg"
+                alt="Mentor for the 2023 National Robot Assembly and Programming Competition"
+                class="activities-img"
+              />            
+          </div>
+          <div class = slider-item>
+            <!-- <div class = activities-content> -->
+              <!-- <h2>
+                hihi
+              </h2>
+              <h4>
+                With an environmental theme, this is a national science research competition for students with over 100 participating teams. As a mentor for the competing teams, I helped two teams win a second prize and a consolation prize.
+              </h4> -->
+            <!-- </div> -->
+              <img
+                src="./assets/organize.jpg"
+                alt="Mentor for the 2023 National Robot Assembly and Programming Competition"
+                class="activities-img"
+              />            
+          </div>
+          <div class = slider-item>
+            <!-- <div class = activities-content> -->
+              <!-- <h2>
+                hihi
+              </h2>
+              <h4>
+                With an environmental theme, this is a national science research competition for students with over 100 participating teams. As a mentor for the competing teams, I helped two teams win a second prize and a consolation prize.
+              </h4> -->
+            <!-- </div> -->
+              <img
+                src="./assets/award_3.jpg"
+                alt="Mentor for the 2023 National Robot Assembly and Programming Competition"
+                class="activities-img"
+              />            
+          </div>
+          <div class = slider-item>
+            <!-- <div class = activities-content> -->
+              <!-- <h2>
+                hihi
+              </h2>
+              <h4>
+                With an environmental theme, this is a national science research competition for students with over 100 participating teams. As a mentor for the competing teams, I helped two teams win a second prize and a consolation prize.
+              </h4> -->
+            <!-- </div> -->
+              <img
+                src="./assets/award_4.jpg"
+                alt="Mentor for the 2023 National Robot Assembly and Programming Competition"
+                class="activities-img"
+              />            
+          </div>
+          <div class = slider-item>
+            <!-- <div class = activities-content> -->
+              <!-- <h2>
+                hihi
+              </h2>
+              <h4>
+                With an environmental theme, this is a national science research competition for students with over 100 participating teams. As a mentor for the competing teams, I helped two teams win a second prize and a consolation prize.
+              </h4> -->
+            <!-- </div> -->
+              <img
+                src="./assets/award_5.jpg"
+                alt="Mentor for the 2023 National Robot Assembly and Programming Competition"
+                class="activities-img"
+              />            
+          </div>
+        </div>
+        <div class = "activities-btns">
+          <button id = activities-btn-prev>
+            <
+          </button>
+          <button id = activities-btn-next>
+            >
+          </button>
+        </div>
+        <ul class = activities-dots>
+          <li class = "active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <a href="#contact"><i class="about-icon arrow fas fa-angle-double-down"></i></a>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="social-icon fas fa-envelope"></i>
+          <p><a href="mailto:dathoangcet@gmail.com">dathoangcet@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="social-icon fas fa-mobile-alt"></i>
+          <p><a href="zalo://chat?phone=+84363604119">+84363604119</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="social-icon fab fa-linkedin-in"></i>
+          <p><a href="https://www.linkedin.com/in/dathoang88/">Dat Hoang</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="social-icon fab fa-facebook"></i>
+          <p><a href="https://www.facebook.com/dathoang240722">Dat Hoang</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Dat Hoang. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
